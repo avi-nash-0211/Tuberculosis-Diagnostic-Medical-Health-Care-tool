@@ -40,8 +40,8 @@ The application processes the uploaded CSV file on the client side and generates
 6. Examine the first ten matching records in a tabular format.
 
 # Dataset Requirement
-<a href="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/tuberculosis_records.csv">Tuberculosis</a>
-<a href="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/DRGCODES.csv>Drug Type</a>
+<a href="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/tuberculosis_records.csv">Tuberculosis</a><br>
+<a href="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/DRGCODES.csv">Drug Type</a>
 The uploaded CSV file should contain a column named:
 
 drg_type
