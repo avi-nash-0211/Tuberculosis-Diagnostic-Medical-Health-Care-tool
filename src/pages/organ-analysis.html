@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Infection Analysis</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="organ-theme">
+
+    <nav class="navbar">
+
+        <div class="logo">
+             TB Analytics
+        </div>
+
+        
+
+    </nav>
+
+    <div class="organ-container">
+
+        <h2>Tuberculosis Cases Analysis</h2>
+
+        <input
+            type="file"
+            id="csvFileInput"
+            accept=".csv"
+        >
+
+        <select id="tbLocationDropdown">
+
+            <option value="">
+                Select TB Location
+            </option>
+
+        </select>
+
+    </div>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3>Total Cases</h3>
+            <p id="totalCases">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>TB Locations</h3>
+            <p id="locationCount">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Most Affected Organ</h3>
+            <p id="topLocation">-</p>
+        </div>
+
+    </div>
+
+    <div class="organ-charts">
+
+        <div class="organ-chart">
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="organ-chart">
+            <canvas id="pieChart"></canvas>
+        </div>
+
+    </div>
+
+    <script src="../js/organ-analysis.js"></script>
+
+</body>
+</html>

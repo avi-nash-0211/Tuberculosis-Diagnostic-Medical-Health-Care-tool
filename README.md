@@ -1,66 +1,187 @@
-# Tuberculosis-Diagnostic-Medical-Health-Care-tool
+# Tuberculosis Diagnostic Analytics Dashboard
 
-# Drug Data Visualization Dashboard
-<h2>Tuberculosis at Different organ</h2>
+Interactive healthcare analytics dashboard for tuberculosis data visualization and exploration using JavaScript, Chart.js, PapaParse, and CSV datasets.
 
-<img src="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/Different%20Organ.png" width="800">
+## Key Highlights
 
-<h2>Drug Distribution Dashboard</h2>
-<img src="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/Drug%20Type.png" width="800">
+* Interactive CSV Dataset Processing
+* Healthcare Data Visualization Dashboard
+* Drug Distribution Analysis using Charts
+* Organ Infection Pattern Analysis
+* Dynamic Pie and Bar Chart 
+* Drug-wise Top 10 Records Exploration
+* Responsive and User-Friendly Interface
+* Interactive Dropdown-Based Filtering
+* Real-Time Data Exploration
 
-# Overview
-This project is a web-based dashboard for visualizing drug-related data from CSV files. Users can upload a dataset, select a drug category, and explore the distribution of drug types through interactive charts and tabular data.
-The application processes the uploaded CSV file on the client side and generates visual insights without requiring a backend server.
+## Overview
 
-# Features
+The Tuberculosis Diagnostic Analytics Dashboard is an interactive healthcare data visualization platform designed to analyze tuberculosis-related datasets. The system processes CSV-based medical records and presents meaningful insights through dynamic visualizations, enabling users to explore infection patterns, drug distribution, and patient record trends.
 
-(1) Upload and parse CSV files
-(2) Automatic extraction of unique drug categories
-(3)Interactive histogram for selected drug types
-(4)Pie chart showing the most frequent drug categories
-(5)Display of the first 10 records for the selected drug type
-(6) Responsive user interface
-(7)Client-side data processing using JavaScript
+## Problem Statement
 
-# Technologies Used
+Tuberculosis datasets often contain large volumes of information that are difficult to interpret manually. This project provides an intuitive dashboard that transforms raw healthcare data into visual insights, helping users better understand disease patterns and treatment-related information.
 
-* HTML
-* CSS
-* JavaScript
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
 * Chart.js
 * PapaParse
+* CSV Datasets
 
-# Working
+## Project Structure
 
-1. Upload a CSV file containing a `drg_type` column.
-2. The application identifies all unique drug categories.
-3. Select a drug type from the dropdown menu.
-4. Generate a histogram showing its percentage occurrence in the dataset.
-5. View the distribution of major drug categories through a pie chart.
-6. Examine the first ten matching records in a tabular format.
-
-# Dataset Requirement
-<a href="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/tuberculosis_records.csv">Tuberculosis Records</a><br>
-<a href="https://github.com/avi-nash-0211/Tuberculosis-Diagnostic-Medical-Health-Care-tool/blob/main/DRGCODES.csv">Drug Codes</a><br>
-The uploaded CSV file "DRGCODES.csv" should contain a column named:
-
-drg_type
-
-Example:
-```csv
-patient_id,drg_type,age
-101,Antibiotic,45
-102,Analgesic,33
-103,Antibiotic,28
-104,Antiviral,50
-```
-
-# Future Improvements
 ```text
-(1)Additional chart types
-(2)Advanced filtering options
-(3)Export charts as images
-(4)Search functionality
-(5)Support for larger datasets
-(6)Dashboard analytics and reporting
+tuberculosis-diagnostic-analytics-dashboard/
+
+README.md
+LICENSE
+
+data/
+├── DRGCODES.csv
+└── tuberculosis_records.csv
+
+src/
+├── drug-analysis.html
+├── organ-analysis.html
+└── top10-analysis.html
+
+docs/
+└── screenshots/
+    ├── drug-analysis.png
+    ├── organ-analysis.png
+    └── top10-analysis.png
 ```
+
+
+## System Architecture
+
+```text
+                    +------------------+
+                    |   CSV Dataset    |
+                    | (Patient Records)|
+                    +--------+---------+
+                             |
+                             v
+                    +------------------+
+                    |  File Upload UI  |
+                    +--------+---------+
+                             |
+                             v
+                    +------------------+
+                    |   PapaParse      |
+                    | CSV Processing   |
+                    +--------+---------+
+                             |
+                             v
+                    +------------------+
+                    | JavaScript Logic |
+                    | Data Aggregation |
+                    +--------+---------+
+                             |
+             +---------------+---------------+
+             |               |               |
+             v               v               v
+
+    +---------------+ +---------------+ +---------------+
+    | Drug Analysis | | Organ Analysis| | Top 10 Records|
+    +-------+-------+ +-------+-------+ +-------+-------+
+            |                 |                 |
+            +--------+--------+--------+--------+
+                             |
+                             v
+                    +------------------+
+                    |     Chart.js     |
+                    | Visualization    |
+                    +--------+---------+
+                             |
+                             v
+                    +------------------+
+                    | Interactive UI   |
+                    | Dashboard Output |
+                    +------------------+
+```
+
+## How to Run
+
+1. Clone or download the repository.
+2. Open any of the HTML files inside the `src` folder.
+3. Upload the required CSV dataset.
+4. Explore the generated visualizations and analytics dashboard.
+
+No additional installation is required.
+
+
+## Screenshots
+
+### Drug Analysis
+
+![Drug Analysis](docs/screenshots/drug-analysis.png)
+
+### Organ Infection Analysis
+
+![Organ Analysis](docs/screenshots/organ-analysis.png)
+
+### Top 10 Records Analysis
+
+![Top 10 Analysis](docs/screenshots/top10-analysis.png)
+
+## Dataset Information
+
+The dashboard uses tuberculosis-related healthcare datasets stored in CSV format to perform visualization and analysis.
+
+### Datasets Used
+
+#### DRGCODES.csv
+
+Contains tuberculosis drug information used for:
+
+* Drug Type Analysis
+* Drug Distribution Visualization
+* Frequency-based Drug Analytics
+
+#### tuberculosis_records.csv
+
+Contains tuberculosis patient records used for:
+
+* Organ Infection Analysis
+* Top 10 Records Visualization
+* Healthcare Data Exploration
+
+### Dataset Format
+
+* File Format: CSV (Comma Separated Values)
+* Processing Library: PapaParse
+* Visualization Library: Chart.js
+
+### Analytics Generated
+
+* Drug Distribution Analysis
+* Organ Infection Trends
+* Top 10 Records Representation
+* Interactive Healthcare Data Insights
+
+
+## Future Enhancements
+
+* Machine Learning-based TB Prediction
+* PDF Report Generation
+* Dark Mode Support
+* Real-Time Database Integration
+* Advanced Healthcare Analytics
+* Interactive Dashboard Statistics
+
+## Author
+
+**Avinash**
+
+MCA Student | Jawaharlal Nehru University (JNU)
+
+Interested in:
+- Software Development
+- Data Analytics
+- Data Visualization
+- Healthcare Informatics
