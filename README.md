@@ -54,15 +54,15 @@ CSV Dataset
 
 ### Drug Analysis
 
-(Add screenshot here)
+![Drug Analysis](docs/screenshots/drug-analysis.png)
 
 ### Organ Infection Analysis
 
-(Add screenshot here)
+![Organ Analysis](docs/screenshots/organ-analysis.png)
 
 ### Top 10 Records Analysis
 
-(Add screenshot here)
+![Top 10 Analysis](docs/screenshots/top10-analysis.png)
 
 ## Dataset Information
 
