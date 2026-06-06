@@ -1,4 +1,7 @@
 # Tuberculosis Diagnostic Analytics Dashboard
+<p align="center">
+  <img src="docs/banner.png" alt="Project Banner" width="100%">
+</p>
 
 Interactive healthcare analytics dashboard for tuberculosis data visualization and exploration using JavaScript, Chart.js, PapaParse, and CSV datasets.
 
